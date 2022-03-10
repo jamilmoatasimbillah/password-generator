@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passgenerator</title>
+    <!-- Author Md Jamil Moatasimbillah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+
+        <section class="header">
+            <h1>Password Generator</h1>
+        </section>
+    
+        <section class="form">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Password Length</td>
+                        <td>
+                            <select id="passwordLength" name="length"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Include Symbols</td>
+                        <td>
+                            <input id="incSymbols" type="checkbox" name="symbols">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Include Numbers</td>
+                        <td>
+                            <input id="incNumbers" type="checkbox" name="numbers">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Include Lowecasae Characters</td>
+                        <td>
+                            <input id="incLowers" type="checkbox" name="lowers">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Include Uppercase characters</td>
+                        <td>
+                            <input id="incUppers" type="checkbox" name="uppers">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Generated Password</td>
+                        <td>
+                            <div id="output"></div>
+                        </td>
+                    </tr>
+                    <tr id="actions">
+                        <td>Actions</td>
+                        <td>
+                            <button id="generateBtn" onclick="generatePassword()">Generate Password</button>
+                            <button id="resetBtn" onclick="reset()">Reset preference</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
